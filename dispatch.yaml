@@ -1,0 +1,10 @@
+dispatch:
+
+  - url: "substitutions-ksl.appspot.com/"
+    service: default
+
+  - url: "substitutions-ksl.appspot.com/worker/*"
+    service: worker
+
+  - url: "substitutions-ksl.appspot.com/api/*"
+    service: api

@@ -1,0 +1,38 @@
+doctype html
+html
+    head
+        title Vertretungen
+    body
+        h1 Hallo #{user.name}
+        p Die Klasse #{user.grade} hat für den #{date} folgende Vertretungen:
+
+        table
+            tr
+                th Klasse
+                th Position
+                th Lehrer
+                th Fach
+                th Raum
+                th Vertretungslehrer
+                th Vertretungsraum
+                th Informationen
+            tbody
+                each sub in subs
+                    tr
+                        td #{sub.grade}
+                        td #{sub.class}
+                        td #{sub.teacher}
+                        td #{sub.subject}
+                        td #{sub.room}
+                        td #{sub.subTeacher}
+                        td #{sub.subRoom}
+                        td #{sub.info}
+        p Bitte beachte, dass du dafür verantwortlich bist zu überprüfen, ob diese Angaben richtig sind.
+        a(href=subUrl) Klicke hier um das zu tun.
+        br
+        p Mit freundlichen Grüßen
+        p Dein Vertretungsplan
+        br
+        p Wenn deine Angaben sich geändert haben oder du diesen Dienst nicht mehr nutzen möchtest,
+        p kannst du unter folgendem Link deine Angaben ändern:
+        a(href=userLink) Klicke hier um das zu tun.

@@ -1,0 +1,9 @@
+cron:
+  - description: "fetching subs"
+    url: /worker/subs/cron
+    schedule: every sun,mon,tue,wed,thu 17:00
+    timezone: Europe/Berlin
+  - description: "sending mails"
+    url: /worker/mail/cron
+    schedule: every sun,mon,tue,wed,thu 18:00
+    timezone: Europe/Berlin

@@ -1,0 +1,17 @@
+{
+  "name": "frontend-server",
+  "version": "1.0.0",
+  "description": "This serves the production build of my ksl substitutitons app",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Denis Ekert",
+  "license": "ISC"
+}
